@@ -1,0 +1,36 @@
+.footer {
+    margin: 20px auto;
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+    &-score {
+        border: 1px solid black;
+        display: flex;
+        padding: 5px 10px;
+        border-radius: 20px;
+
+        &-player {
+            &.player-1 {
+                padding-right: 5px;
+                border-right: 1px solid black;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &-reset {
+        cursor: pointer;
+        border: 1px solid black;
+        margin-right: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+
+        &:before {
+            width: 20px;
+            height: 20px;
+            content: '';
+            display: inline-block;
+            background: url('../../svg/restart.svg')
+        }
+    }
+}

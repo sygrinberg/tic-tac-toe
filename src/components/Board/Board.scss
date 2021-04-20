@@ -1,0 +1,29 @@
+.board {
+    margin: 10px auto;
+    max-width: 300px;
+    // height: 500px;
+    border: 1px solid black;
+    padding: 10px;
+    &-row {
+        display: flex;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid black;
+        }
+        &-cell {
+            flex: 1;
+            height: 100px;
+            cursor: pointer;
+
+            &:not(:last-of-type) {
+                border-right: 1px solid black;
+            }
+            &.x-player {
+                background: url('../../svg/x.svg') no-repeat;
+            }
+            &.o-player {
+                background: url('../../svg/o.svg') no-repeat;
+            }
+        }
+
+    }
+}
